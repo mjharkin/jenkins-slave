@@ -1,7 +1,7 @@
 ARG ALPINE_DOCKER_VER=3.7_17.09.0
 FROM mjha/alpine-docker:${ALPINE_DOCKER_VER}
 
-LABEL MAINTAINER="Mark Harkin"
+MAINTAINER Mark Harkin
 
 USER root
 
