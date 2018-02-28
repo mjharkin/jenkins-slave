@@ -1,4 +1,4 @@
-ARG ALPINE_DOCKER_VER=3.7_17.09.0
+ARG ALPINE_DOCKER_VER=3.7_17.12.1
 FROM mjha/alpine-docker:${ALPINE_DOCKER_VER}
 
 MAINTAINER Mark Harkin
@@ -39,7 +39,7 @@ RUN apk add --no-cache openssh \
 
 # Docker Compose
 RUN apk add --no-cache py2-pip=9.0.1-r1 \
-  && pip install docker-compose==1.16.1
+  && pip install docker-compose==1.19.0
 
 EXPOSE 22
 
